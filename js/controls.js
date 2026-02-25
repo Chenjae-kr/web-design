@@ -9,9 +9,9 @@
   };
 
   const cards = {
-    spotlight: document.querySelectorAll('#spotlight .fx-card'),
-    border: document.querySelectorAll('#border .fx-card'),
-    shadow: document.querySelectorAll('#shadow .fx-card')
+    spotlight: document.querySelectorAll('#spotlight .fx-card, #components .spotlight'),
+    border: document.querySelectorAll('#border .fx-card, #components .animated-border'),
+    shadow: document.querySelectorAll('#shadow .fx-card, #components .soft-shadow')
   };
 
   function applyPreset(name){
@@ -48,7 +48,8 @@
     spotlight: `.spotlight::before {\n  background: radial-gradient(var(--spotlight-radius) circle at var(--mx,50%) var(--my,50%), rgba(var(--cat-rgb), var(--spotlight-alpha)), transparent 60%);\n}`,
     glass: `.glass-panel {\n  backdrop-filter: blur(var(--glass-blur));\n  box-shadow: inset 0 1px 0 rgba(255,255,255,.28), 0 18px 36px rgba(0,0,0,.16);\n}`,
     border: `.animated-border:hover {\n  animation: borderFlow var(--border-speed) linear infinite;\n}`,
-    shadow: `.soft-shadow {\n  box-shadow:\n    0 2px 8px rgba(0,0,0,.16),\n    0 var(--shadow-depth) calc(var(--shadow-depth) * 2.2) rgba(var(--cat-rgb),.14);\n}`
+    shadow: `.soft-shadow {\n  box-shadow:\n    0 2px 8px rgba(0,0,0,.16),\n    0 var(--shadow-depth) calc(var(--shadow-depth) * 2.2) rgba(var(--cat-rgb),.14);\n}`,
+    components: `.demo-table{ width:100%; border-collapse:collapse; }\n.demo-btn{ border-radius:10px; padding:8px 12px; }\n.demo-badge{ border-radius:999px; padding:4px 8px; }`
   };
 
   document.querySelectorAll('[data-copy]').forEach(btn => {

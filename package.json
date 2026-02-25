@@ -1,0 +1,15 @@
+{
+  "name": "design-language-explorer",
+  "version": "1.0.0",
+  "description": "디자인 언어를 웹페이지 느낌으로 이해하는 학습 사이트",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0",
+    "gh-pages": "^6.1.1"
+  }
+}

@@ -1,17 +1,14 @@
-/* Claymorphism language */
-.style-clay{
-  background:color-mix(in srgb,var(--bg2) 96%, #f5f7ff 4%);
-  border-color:color-mix(in srgb,var(--line) 75%, transparent);
-  border-radius:20px;
-  box-shadow:
-    calc(var(--clay-depth) * .55) calc(var(--clay-depth) * .55) calc(var(--clay-depth) * 1.2) rgba(0,0,0,.16),
-    calc(var(--clay-depth) * -.45) calc(var(--clay-depth) * -.45) calc(var(--clay-depth) * 1.1) rgba(255,255,255,.22);
+.language-clay{
+  background:color-mix(in srgb,var(--bg2) 96%, #eff3ff 4%);
 }
-.style-clay .demo-btn,
-.style-clay .demo-input,
-.style-clay .demo-panel{
-  border-radius:14px;
-  box-shadow:
-    4px 4px 10px rgba(0,0,0,.12),
-    -3px -3px 8px rgba(255,255,255,.16);
+.language-clay .mini-topbar,
+.language-clay .mini-card,
+.language-clay .mini-input,
+.language-clay .mini-btn,
+.language-clay .mini-cta,
+.language-clay .mini-stats div{
+  border-radius:16px;
+  background:color-mix(in srgb,var(--bg2) 96%, #f7f9ff 4%);
+  box-shadow:8px 8px 18px rgba(0,0,0,.14), -6px -6px 16px rgba(255,255,255,.22);
 }
+.language-clay .mini-btn.primary{background:linear-gradient(180deg,#7dd3fc,#38bdf8);color:#0c2432;border-color:rgba(125,211,252,.45)}

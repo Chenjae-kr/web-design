@@ -1,36 +1,29 @@
-# Design Language Playground
+# Design Language Explorer
 
-디자인 언어(Glassmorphism, Claymorphism, Dark Mode)를 **실제 컴포넌트에 입혀서 체감**하는 학습형 GitHub Pages 사이트입니다.
+디자인 언어를 글로만 읽지 않고, **간단한 웹사이트 형태로 직접 체감**하는 GitHub Pages 프로젝트입니다.
 
-## 목적
+## 핵심 컨셉
 
-"이 디자인이 어떤 느낌인지"를 빠르게 이해할 수 있도록,
-각 스타일을 같은 UI 컴포넌트 세트로 비교합니다.
+- 왼쪽 메뉴에서 디자인 언어 선택
+- 오른쪽에 해당 스타일이 적용된 미니 웹페이지 표시
+- 위에 해당 디자인 언어 설명(키워드/추천 사용처/주의점) 동기화
 
-## 페이지 구성
+## 포함된 디자인 언어
 
-1. 스타일 A: **Glassmorphism**
-2. 스타일 B: **Claymorphism**
-3. 스타일 C: **Dark Mode Language**
-4. **비교표** (언제 쓰는지/리스크 포함)
-5. **미니 용어 사전** (blur, elevation, contrast, saturation, inner light)
+1. Glassmorphism
+2. Claymorphism
+3. Dark Mode Language
 
-각 스타일 섹션에는 다음 컴포넌트가 공통으로 포함됩니다.
+## 미니 웹페이지에 포함된 공통 컴포넌트
 
+- Topbar
 - Button
 - Panel/Card
-- Badge/Chip
+- Badge
 - Table
 - Input
 
-## 인터랙션
-
-- 다크/라이트 테마 토글
-- 스타일 파라미터 학습용 슬라이더
-  - Glass Blur
-  - Clay Softness
-  - Dark Contrast
-- 섹션별 코드 복사 버튼
+같은 구조를 유지하고 스타일만 바꿔서, 차이를 빠르게 이해할 수 있게 설계했습니다.
 
 ## 파일 구조
 
@@ -44,7 +37,7 @@ web-design/
 │   └── dark-language.css
 ├── js/
 │   ├── theme-toggle.js
-│   └── controls.js
+│   └── language-menu.js
 └── README.md
 ```
 
@@ -56,4 +49,4 @@ python -m http.server 8080
 
 ## 배포
 
-GitHub Pages에서 `main` 브랜치 `/ (root)`를 선택하면 바로 배포됩니다.
+GitHub Pages에서 `main` 브랜치 `/ (root)`를 선택하면 배포됩니다.

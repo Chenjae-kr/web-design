@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Design Effects Lab</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar glass">
+    <div class="brand">✨ Web Design Effects Lab</div>
+    <nav>
+      <a href="#spotlight">Spotlight</a>
+      <a href="#glass">Glass</a>
+      <a href="#border">Border</a>
+      <a href="#shadow">Shadow</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>다양한 웹디자인 효과 예제 모음</h1>
+      <p>마우스 조명 · 글래스모피즘 · 애니메이션 보더 · 다중 소프트 섀도우</p>
+    </section>
+
+    <section id="spotlight" class="section">
+      <h2>1) 🖱️ Mouse Spotlight / Glow</h2>
+      <div class="grid">
+        <article class="fx-card spotlight" style="--cat-rgb:79,255,176"><h3>Dev Tool</h3><p>카드 내부 glow가 마우스를 추적합니다.</p></article>
+        <article class="fx-card spotlight" style="--cat-rgb:167,139,250"><h3>Data</h3><p>radial-gradient + CSS 변수(--mx,--my)</p></article>
+        <article class="fx-card spotlight" style="--cat-rgb:96,165,250"><h3>SQL</h3><p>테두리/배경 모두 자연스럽게 강조</p></article>
+      </div>
+    </section>
+
+    <section id="glass" class="section">
+      <h2>2) 🪞 Glassmorphism + Inner Light</h2>
+      <div class="grid">
+        <article class="fx-card glass-panel"><h3>Glass Card</h3><p>backdrop-filter + inset inner border</p></article>
+        <article class="fx-card glass-panel"><h3>Depth</h3><p>배경 그리드가 은은하게 비칩니다.</p></article>
+        <article class="fx-card glass-panel"><h3>Premium</h3><p>애플/macOS 느낌의 미세한 광택</p></article>
+      </div>
+    </section>
+
+    <section id="border" class="section">
+      <h2>3) 🎨 Animated Gradient Border</h2>
+      <div class="grid">
+        <article class="fx-card animated-border" style="--cat-rgb:79,255,176"><h3>Hover Me</h3><p>보더를 따라 빛이 흐릅니다.</p></article>
+        <article class="fx-card animated-border" style="--cat-rgb:167,139,250"><h3>Cyber</h3><p>모던 개발툴 감성 강조</p></article>
+        <article class="fx-card animated-border" style="--cat-rgb:251,191,36"><h3>Signal</h3><p>강조가 필요한 카드에 적합</p></article>
+      </div>
+    </section>
+
+    <section id="shadow" class="section">
+      <h2>4) ☁️ Multi-layered Soft Shadow</h2>
+      <div class="grid">
+        <article class="fx-card soft-shadow" style="--cat-rgb:96,165,250"><h3>Float</h3><p>여러 레이어로 부드럽게 뜹니다.</p></article>
+        <article class="fx-card soft-shadow" style="--cat-rgb:52,211,153"><h3>Natural</h3><p>위화감 없이 깊이감 증가</p></article>
+        <article class="fx-card soft-shadow" style="--cat-rgb:248,113,113"><h3>Detail</h3><p>클래식한 품질 향상 패턴</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">Built for GitHub Pages · Chenjae</footer>
+  <script src="script.js"></script>
+</body>
+</html>

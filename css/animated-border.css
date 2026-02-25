@@ -9,7 +9,7 @@
 }
 .animated-border:hover{
   transform:translateY(-3px);
-  animation:borderFlow 1.8s linear infinite;
+  animation:borderFlow var(--border-speed) linear infinite;
   box-shadow:0 14px 30px rgba(var(--cat-rgb), .22);
 }
 @keyframes borderFlow { from{background-position:0 0,0% 50%} to{background-position:0 0,160% 50%} }

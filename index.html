@@ -28,10 +28,29 @@
     <section class="hero">
       <h1>다양한 웹디자인 효과 예제 모음</h1>
       <p>마우스 조명 · 글래스모피즘 · 애니메이션 보더 · 다중 소프트 섀도우</p>
+
+      <div class="control-panel">
+        <div class="control-row">
+          <span class="label">Color Preset</span>
+          <div class="chips" id="presetChips">
+            <button class="chip active" data-preset="mint">Mint</button>
+            <button class="chip" data-preset="violet">Violet</button>
+            <button class="chip" data-preset="cyber">Cyber</button>
+            <button class="chip" data-preset="warm">Warm</button>
+          </div>
+        </div>
+        <div class="control-grid">
+          <label>Spotlight Radius <input id="spotRadius" type="range" min="120" max="360" value="220"></label>
+          <label>Spotlight Glow <input id="spotAlpha" type="range" min="10" max="50" value="28"></label>
+          <label>Glass Blur <input id="glassBlur" type="range" min="2" max="16" value="8"></label>
+          <label>Border Speed <input id="borderSpeed" type="range" min="8" max="30" value="18"></label>
+          <label>Shadow Depth <input id="shadowDepth" type="range" min="8" max="20" value="12"></label>
+        </div>
+      </div>
     </section>
 
     <section id="spotlight" class="section">
-      <h2>1) 🖱️ Mouse Spotlight / Glow</h2>
+      <div class="section-head"><h2>1) 🖱️ Mouse Spotlight / Glow</h2><button class="copy-btn" data-copy="spotlight">코드 복사</button></div>
       <div class="grid">
         <article class="fx-card spotlight" style="--cat-rgb:79,255,176"><h3>Dev Tool</h3><p>카드 내부 glow가 마우스를 추적합니다.</p></article>
         <article class="fx-card spotlight" style="--cat-rgb:167,139,250"><h3>Data</h3><p>radial-gradient + CSS 변수(--mx,--my)</p></article>
@@ -40,7 +59,7 @@
     </section>
 
     <section id="glass" class="section">
-      <h2>2) 🪞 Glassmorphism + Inner Light</h2>
+      <div class="section-head"><h2>2) 🪞 Glassmorphism + Inner Light</h2><button class="copy-btn" data-copy="glass">코드 복사</button></div>
       <div class="grid">
         <article class="fx-card glass-panel"><h3>Glass Card</h3><p>backdrop-filter + inset inner border</p></article>
         <article class="fx-card glass-panel"><h3>Depth</h3><p>배경 그리드가 은은하게 비칩니다.</p></article>
@@ -49,7 +68,7 @@
     </section>
 
     <section id="border" class="section">
-      <h2>3) 🎨 Animated Gradient Border</h2>
+      <div class="section-head"><h2>3) 🎨 Animated Gradient Border</h2><button class="copy-btn" data-copy="border">코드 복사</button></div>
       <div class="grid">
         <article class="fx-card animated-border" style="--cat-rgb:79,255,176"><h3>Hover Me</h3><p>보더를 따라 빛이 흐릅니다.</p></article>
         <article class="fx-card animated-border" style="--cat-rgb:167,139,250"><h3>Cyber</h3><p>모던 개발툴 감성 강조</p></article>
@@ -58,7 +77,7 @@
     </section>
 
     <section id="shadow" class="section">
-      <h2>4) ☁️ Multi-layered Soft Shadow</h2>
+      <div class="section-head"><h2>4) ☁️ Multi-layered Soft Shadow</h2><button class="copy-btn" data-copy="shadow">코드 복사</button></div>
       <div class="grid">
         <article class="fx-card soft-shadow" style="--cat-rgb:96,165,250"><h3>Float</h3><p>여러 레이어로 부드럽게 뜹니다.</p></article>
         <article class="fx-card soft-shadow" style="--cat-rgb:52,211,153"><h3>Natural</h3><p>위화감 없이 깊이감 증가</p></article>
@@ -69,6 +88,7 @@
 
   <footer class="footer">Built for GitHub Pages · Chenjae</footer>
   <script src="js/theme-toggle.js"></script>
+  <script src="js/controls.js"></script>
   <script src="js/spotlight.js"></script>
   <script src="js/glass.js"></script>
   <script src="js/animated-border.js"></script>

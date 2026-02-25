@@ -9,9 +9,9 @@
   };
 
   const cards = {
-    spotlight: document.querySelectorAll('#spotlight .fx-card, #components .spotlight'),
-    border: document.querySelectorAll('#border .fx-card, #components .animated-border'),
-    shadow: document.querySelectorAll('#shadow .fx-card, #components .soft-shadow')
+    spotlight: document.querySelectorAll('.spotlight'),
+    border: document.querySelectorAll('.animated-border'),
+    shadow: document.querySelectorAll('.soft-shadow')
   };
 
   function applyPreset(name){

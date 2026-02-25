@@ -105,6 +105,8 @@ nav a:hover{color:var(--text)}
 .demo-badge.ok{background:rgba(34,197,94,.15);border-color:rgba(34,197,94,.4)}
 .demo-badge.beta{background:rgba(59,130,246,.15);border-color:rgba(59,130,246,.4)}
 .demo-badge.hot{background:rgba(234,179,8,.15);border-color:rgba(234,179,8,.4)}
+.demo-panel{border:1px dashed var(--line);border-radius:12px;padding:12px;background:color-mix(in srgb,var(--bg2) 88%, transparent)}
+.demo-panel p{font-size:13px;color:var(--muted)}
 
 .footer{padding:26px 16px 34px;text-align:center;color:var(--muted);font-size:13px}
 

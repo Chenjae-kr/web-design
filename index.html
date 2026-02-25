@@ -26,8 +26,8 @@
 
   <main class="container">
     <section class="hero">
-      <h1>다양한 웹디자인 효과 예제 모음</h1>
-      <p>마우스 조명 · 글래스모피즘 · 애니메이션 보더 · 다중 소프트 섀도우</p>
+      <h1>스타일별 컴포넌트 쇼케이스</h1>
+      <p>각 스타일 섹션 안에 표/버튼/배지/패널 컴포넌트를 배치했습니다.</p>
 
       <div class="control-panel">
         <div class="control-row">
@@ -51,71 +51,93 @@
 
     <section id="spotlight" class="section">
       <div class="section-head"><h2>1) 🖱️ Mouse Spotlight / Glow</h2><button class="copy-btn" data-copy="spotlight">코드 복사</button></div>
-      <div class="grid">
-        <article class="fx-card spotlight" style="--cat-rgb:79,255,176"><h3>Dev Tool</h3><p>카드 내부 glow가 마우스를 추적합니다.</p></article>
-        <article class="fx-card spotlight" style="--cat-rgb:167,139,250"><h3>Data</h3><p>radial-gradient + CSS 변수(--mx,--my)</p></article>
-        <article class="fx-card spotlight" style="--cat-rgb:96,165,250"><h3>SQL</h3><p>테두리/배경 모두 자연스럽게 강조</p></article>
+      <div class="grid grid-4">
+        <article class="fx-card spotlight" style="--cat-rgb:79,255,176">
+          <h3>Table</h3>
+          <table class="demo-table"><thead><tr><th>Plan</th><th>Price</th><th>Users</th></tr></thead><tbody><tr><td>Starter</td><td>$9</td><td>3</td></tr><tr><td>Pro</td><td>$29</td><td>10</td></tr><tr><td>Team</td><td>$79</td><td>30</td></tr></tbody></table>
+        </article>
+        <article class="fx-card spotlight" style="--cat-rgb:167,139,250">
+          <h3>Buttons</h3>
+          <div class="demo-btn-row"><button class="demo-btn primary">Primary</button><button class="demo-btn ghost">Ghost</button><button class="demo-btn danger">Danger</button></div>
+        </article>
+        <article class="fx-card spotlight" style="--cat-rgb:251,191,36">
+          <h3>Badge + Stats</h3>
+          <div class="stat-grid"><div><strong>98%</strong><span>Retention</span></div><div><strong>24ms</strong><span>Latency</span></div></div>
+          <div class="badge-row"><span class="demo-badge ok">Stable</span><span class="demo-badge beta">Beta</span><span class="demo-badge hot">Hot</span></div>
+        </article>
+        <article class="fx-card spotlight" style="--cat-rgb:96,165,250">
+          <h3>Panel</h3>
+          <div class="demo-panel"><p>Mouse 위치를 따라 패널에 은은한 광원이 생깁니다.</p></div>
+        </article>
       </div>
     </section>
 
     <section id="glass" class="section">
       <div class="section-head"><h2>2) 🪞 Glassmorphism + Inner Light</h2><button class="copy-btn" data-copy="glass">코드 복사</button></div>
-      <div class="grid">
-        <article class="fx-card glass-panel"><h3>Glass Card</h3><p>backdrop-filter + inset inner border</p></article>
-        <article class="fx-card glass-panel"><h3>Depth</h3><p>배경 그리드가 은은하게 비칩니다.</p></article>
-        <article class="fx-card glass-panel"><h3>Premium</h3><p>애플/macOS 느낌의 미세한 광택</p></article>
+      <div class="grid grid-4">
+        <article class="fx-card glass-panel" style="--cat-rgb:79,255,176">
+          <h3>Table</h3>
+          <table class="demo-table"><thead><tr><th>Plan</th><th>Price</th><th>Users</th></tr></thead><tbody><tr><td>Starter</td><td>$9</td><td>3</td></tr><tr><td>Pro</td><td>$29</td><td>10</td></tr><tr><td>Team</td><td>$79</td><td>30</td></tr></tbody></table>
+        </article>
+        <article class="fx-card glass-panel" style="--cat-rgb:167,139,250">
+          <h3>Buttons</h3>
+          <div class="demo-btn-row"><button class="demo-btn primary">Primary</button><button class="demo-btn ghost">Ghost</button><button class="demo-btn danger">Danger</button></div>
+        </article>
+        <article class="fx-card glass-panel" style="--cat-rgb:251,191,36">
+          <h3>Badge + Stats</h3>
+          <div class="stat-grid"><div><strong>98%</strong><span>Retention</span></div><div><strong>24ms</strong><span>Latency</span></div></div>
+          <div class="badge-row"><span class="demo-badge ok">Stable</span><span class="demo-badge beta">Beta</span><span class="demo-badge hot">Hot</span></div>
+        </article>
+        <article class="fx-card glass-panel" style="--cat-rgb:96,165,250">
+          <h3>Panel</h3>
+          <div class="demo-panel"><p>블러 + 이너라이트로 고급스러운 정보 패널 느낌을 냅니다.</p></div>
+        </article>
       </div>
     </section>
 
     <section id="border" class="section">
       <div class="section-head"><h2>3) 🎨 Animated Gradient Border</h2><button class="copy-btn" data-copy="border">코드 복사</button></div>
-      <div class="grid">
-        <article class="fx-card animated-border" style="--cat-rgb:79,255,176"><h3>Hover Me</h3><p>보더를 따라 빛이 흐릅니다.</p></article>
-        <article class="fx-card animated-border" style="--cat-rgb:167,139,250"><h3>Cyber</h3><p>모던 개발툴 감성 강조</p></article>
-        <article class="fx-card animated-border" style="--cat-rgb:251,191,36"><h3>Signal</h3><p>강조가 필요한 카드에 적합</p></article>
+      <div class="grid grid-4">
+        <article class="fx-card animated-border" style="--cat-rgb:79,255,176">
+          <h3>Table</h3>
+          <table class="demo-table"><thead><tr><th>Plan</th><th>Price</th><th>Users</th></tr></thead><tbody><tr><td>Starter</td><td>$9</td><td>3</td></tr><tr><td>Pro</td><td>$29</td><td>10</td></tr><tr><td>Team</td><td>$79</td><td>30</td></tr></tbody></table>
+        </article>
+        <article class="fx-card animated-border" style="--cat-rgb:167,139,250">
+          <h3>Buttons</h3>
+          <div class="demo-btn-row"><button class="demo-btn primary">Primary</button><button class="demo-btn ghost">Ghost</button><button class="demo-btn danger">Danger</button></div>
+        </article>
+        <article class="fx-card animated-border" style="--cat-rgb:251,191,36">
+          <h3>Badge + Stats</h3>
+          <div class="stat-grid"><div><strong>98%</strong><span>Retention</span></div><div><strong>24ms</strong><span>Latency</span></div></div>
+          <div class="badge-row"><span class="demo-badge ok">Stable</span><span class="demo-badge beta">Beta</span><span class="demo-badge hot">Hot</span></div>
+        </article>
+        <article class="fx-card animated-border" style="--cat-rgb:96,165,250">
+          <h3>Panel</h3>
+          <div class="demo-panel"><p>호버 시 움직이는 보더로 패널 경계가 생동감 있게 강조됩니다.</p></div>
+        </article>
       </div>
     </section>
 
     <section id="shadow" class="section">
       <div class="section-head"><h2>4) ☁️ Multi-layered Soft Shadow</h2><button class="copy-btn" data-copy="shadow">코드 복사</button></div>
-      <div class="grid">
-        <article class="fx-card soft-shadow" style="--cat-rgb:96,165,250"><h3>Float</h3><p>여러 레이어로 부드럽게 뜹니다.</p></article>
-        <article class="fx-card soft-shadow" style="--cat-rgb:52,211,153"><h3>Natural</h3><p>위화감 없이 깊이감 증가</p></article>
-        <article class="fx-card soft-shadow" style="--cat-rgb:248,113,113"><h3>Detail</h3><p>클래식한 품질 향상 패턴</p></article>
-      </div>
-    </section>
-
-    <section id="components" class="section">
-      <div class="section-head"><h2>5) 🧩 Component Showcase</h2><button class="copy-btn" data-copy="components">코드 복사</button></div>
-
-      <div class="component-group">
-        <h3 class="section-mini-title">Table Component (4 Styles)</h3>
-        <div class="grid grid-4">
-          <article class="fx-card spotlight" style="--cat-rgb:99,102,241"><h3>Spotlight</h3><table class="demo-table"><thead><tr><th>Plan</th><th>Price</th><th>Users</th></tr></thead><tbody><tr><td>Starter</td><td>$9</td><td>3</td></tr><tr><td>Pro</td><td>$29</td><td>10</td></tr><tr><td>Team</td><td>$79</td><td>30</td></tr></tbody></table></article>
-          <article class="fx-card glass-panel"><h3>Glass</h3><table class="demo-table"><thead><tr><th>Plan</th><th>Price</th><th>Users</th></tr></thead><tbody><tr><td>Starter</td><td>$9</td><td>3</td></tr><tr><td>Pro</td><td>$29</td><td>10</td></tr><tr><td>Team</td><td>$79</td><td>30</td></tr></tbody></table></article>
-          <article class="fx-card animated-border" style="--cat-rgb:34,197,94"><h3>Border</h3><table class="demo-table"><thead><tr><th>Plan</th><th>Price</th><th>Users</th></tr></thead><tbody><tr><td>Starter</td><td>$9</td><td>3</td></tr><tr><td>Pro</td><td>$29</td><td>10</td></tr><tr><td>Team</td><td>$79</td><td>30</td></tr></tbody></table></article>
-          <article class="fx-card soft-shadow" style="--cat-rgb:96,165,250"><h3>Shadow</h3><table class="demo-table"><thead><tr><th>Plan</th><th>Price</th><th>Users</th></tr></thead><tbody><tr><td>Starter</td><td>$9</td><td>3</td></tr><tr><td>Pro</td><td>$29</td><td>10</td></tr><tr><td>Team</td><td>$79</td><td>30</td></tr></tbody></table></article>
-        </div>
-      </div>
-
-      <div class="component-group">
-        <h3 class="section-mini-title">Button Component (4 Styles)</h3>
-        <div class="grid grid-4">
-          <article class="fx-card spotlight" style="--cat-rgb:234,179,8"><h3>Spotlight</h3><div class="demo-btn-row"><button class="demo-btn primary">Primary</button><button class="demo-btn ghost">Ghost</button><button class="demo-btn danger">Danger</button></div></article>
-          <article class="fx-card glass-panel"><h3>Glass</h3><div class="demo-btn-row"><button class="demo-btn primary">Primary</button><button class="demo-btn ghost">Ghost</button><button class="demo-btn danger">Danger</button></div></article>
-          <article class="fx-card animated-border" style="--cat-rgb:168,85,247"><h3>Border</h3><div class="demo-btn-row"><button class="demo-btn primary">Primary</button><button class="demo-btn ghost">Ghost</button><button class="demo-btn danger">Danger</button></div></article>
-          <article class="fx-card soft-shadow" style="--cat-rgb:52,211,153"><h3>Shadow</h3><div class="demo-btn-row"><button class="demo-btn primary">Primary</button><button class="demo-btn ghost">Ghost</button><button class="demo-btn danger">Danger</button></div></article>
-        </div>
-      </div>
-
-      <div class="component-group">
-        <h3 class="section-mini-title">Stats/Badge Component (4 Styles)</h3>
-        <div class="grid grid-4">
-          <article class="fx-card spotlight" style="--cat-rgb:244,114,182"><h3>Spotlight</h3><div class="stat-grid"><div><strong>98%</strong><span>Retention</span></div><div><strong>24ms</strong><span>Latency</span></div></div><div class="badge-row"><span class="demo-badge ok">Stable</span><span class="demo-badge beta">Beta</span><span class="demo-badge hot">Hot</span></div></article>
-          <article class="fx-card glass-panel"><h3>Glass</h3><div class="stat-grid"><div><strong>98%</strong><span>Retention</span></div><div><strong>24ms</strong><span>Latency</span></div></div><div class="badge-row"><span class="demo-badge ok">Stable</span><span class="demo-badge beta">Beta</span><span class="demo-badge hot">Hot</span></div></article>
-          <article class="fx-card animated-border" style="--cat-rgb:59,130,246"><h3>Border</h3><div class="stat-grid"><div><strong>98%</strong><span>Retention</span></div><div><strong>24ms</strong><span>Latency</span></div></div><div class="badge-row"><span class="demo-badge ok">Stable</span><span class="demo-badge beta">Beta</span><span class="demo-badge hot">Hot</span></div></article>
-          <article class="fx-card soft-shadow" style="--cat-rgb:251,146,60"><h3>Shadow</h3><div class="stat-grid"><div><strong>98%</strong><span>Retention</span></div><div><strong>24ms</strong><span>Latency</span></div></div><div class="badge-row"><span class="demo-badge ok">Stable</span><span class="demo-badge beta">Beta</span><span class="demo-badge hot">Hot</span></div></article>
-        </div>
+      <div class="grid grid-4">
+        <article class="fx-card soft-shadow" style="--cat-rgb:79,255,176">
+          <h3>Table</h3>
+          <table class="demo-table"><thead><tr><th>Plan</th><th>Price</th><th>Users</th></tr></thead><tbody><tr><td>Starter</td><td>$9</td><td>3</td></tr><tr><td>Pro</td><td>$29</td><td>10</td></tr><tr><td>Team</td><td>$79</td><td>30</td></tr></tbody></table>
+        </article>
+        <article class="fx-card soft-shadow" style="--cat-rgb:167,139,250">
+          <h3>Buttons</h3>
+          <div class="demo-btn-row"><button class="demo-btn primary">Primary</button><button class="demo-btn ghost">Ghost</button><button class="demo-btn danger">Danger</button></div>
+        </article>
+        <article class="fx-card soft-shadow" style="--cat-rgb:251,191,36">
+          <h3>Badge + Stats</h3>
+          <div class="stat-grid"><div><strong>98%</strong><span>Retention</span></div><div><strong>24ms</strong><span>Latency</span></div></div>
+          <div class="badge-row"><span class="demo-badge ok">Stable</span><span class="demo-badge beta">Beta</span><span class="demo-badge hot">Hot</span></div>
+        </article>
+        <article class="fx-card soft-shadow" style="--cat-rgb:96,165,250">
+          <h3>Panel</h3>
+          <div class="demo-panel"><p>다층 그림자로 패널이 배경 위에 부유하는 깊이감을 만듭니다.</p></div>
+        </article>
       </div>
     </section>
   </main>

@@ -87,41 +87,35 @@
 
     <section id="components" class="section">
       <div class="section-head"><h2>5) 🧩 Component Showcase</h2><button class="copy-btn" data-copy="components">코드 복사</button></div>
-      <div class="grid">
-        <article class="fx-card glass-panel soft-shadow" style="--cat-rgb:99,102,241">
-          <h3>Pricing Table</h3>
-          <table class="demo-table">
-            <thead><tr><th>Plan</th><th>Price</th><th>Users</th></tr></thead>
-            <tbody>
-              <tr><td>Starter</td><td>$9</td><td>3</td></tr>
-              <tr><td>Pro</td><td>$29</td><td>10</td></tr>
-              <tr><td>Team</td><td>$79</td><td>30</td></tr>
-            </tbody>
-          </table>
-        </article>
 
-        <article class="fx-card animated-border" style="--cat-rgb:34,197,94">
-          <h3>Buttons</h3>
-          <div class="demo-btn-row">
-            <button class="demo-btn primary">Primary</button>
-            <button class="demo-btn ghost">Ghost</button>
-            <button class="demo-btn danger">Danger</button>
-          </div>
-          <p>호버/활성 상태 데모용 버튼 세트</p>
-        </article>
+      <div class="component-group">
+        <h3 class="section-mini-title">Table Component (4 Styles)</h3>
+        <div class="grid grid-4">
+          <article class="fx-card spotlight" style="--cat-rgb:99,102,241"><h3>Spotlight</h3><table class="demo-table"><thead><tr><th>Plan</th><th>Price</th><th>Users</th></tr></thead><tbody><tr><td>Starter</td><td>$9</td><td>3</td></tr><tr><td>Pro</td><td>$29</td><td>10</td></tr><tr><td>Team</td><td>$79</td><td>30</td></tr></tbody></table></article>
+          <article class="fx-card glass-panel"><h3>Glass</h3><table class="demo-table"><thead><tr><th>Plan</th><th>Price</th><th>Users</th></tr></thead><tbody><tr><td>Starter</td><td>$9</td><td>3</td></tr><tr><td>Pro</td><td>$29</td><td>10</td></tr><tr><td>Team</td><td>$79</td><td>30</td></tr></tbody></table></article>
+          <article class="fx-card animated-border" style="--cat-rgb:34,197,94"><h3>Border</h3><table class="demo-table"><thead><tr><th>Plan</th><th>Price</th><th>Users</th></tr></thead><tbody><tr><td>Starter</td><td>$9</td><td>3</td></tr><tr><td>Pro</td><td>$29</td><td>10</td></tr><tr><td>Team</td><td>$79</td><td>30</td></tr></tbody></table></article>
+          <article class="fx-card soft-shadow" style="--cat-rgb:96,165,250"><h3>Shadow</h3><table class="demo-table"><thead><tr><th>Plan</th><th>Price</th><th>Users</th></tr></thead><tbody><tr><td>Starter</td><td>$9</td><td>3</td></tr><tr><td>Pro</td><td>$29</td><td>10</td></tr><tr><td>Team</td><td>$79</td><td>30</td></tr></tbody></table></article>
+        </div>
+      </div>
 
-        <article class="fx-card spotlight" style="--cat-rgb:234,179,8">
-          <h3>Stats + Badges</h3>
-          <div class="stat-grid">
-            <div><strong>98%</strong><span>Retention</span></div>
-            <div><strong>24ms</strong><span>Latency</span></div>
-          </div>
-          <div class="badge-row">
-            <span class="demo-badge ok">Stable</span>
-            <span class="demo-badge beta">Beta</span>
-            <span class="demo-badge hot">Hot</span>
-          </div>
-        </article>
+      <div class="component-group">
+        <h3 class="section-mini-title">Button Component (4 Styles)</h3>
+        <div class="grid grid-4">
+          <article class="fx-card spotlight" style="--cat-rgb:234,179,8"><h3>Spotlight</h3><div class="demo-btn-row"><button class="demo-btn primary">Primary</button><button class="demo-btn ghost">Ghost</button><button class="demo-btn danger">Danger</button></div></article>
+          <article class="fx-card glass-panel"><h3>Glass</h3><div class="demo-btn-row"><button class="demo-btn primary">Primary</button><button class="demo-btn ghost">Ghost</button><button class="demo-btn danger">Danger</button></div></article>
+          <article class="fx-card animated-border" style="--cat-rgb:168,85,247"><h3>Border</h3><div class="demo-btn-row"><button class="demo-btn primary">Primary</button><button class="demo-btn ghost">Ghost</button><button class="demo-btn danger">Danger</button></div></article>
+          <article class="fx-card soft-shadow" style="--cat-rgb:52,211,153"><h3>Shadow</h3><div class="demo-btn-row"><button class="demo-btn primary">Primary</button><button class="demo-btn ghost">Ghost</button><button class="demo-btn danger">Danger</button></div></article>
+        </div>
+      </div>
+
+      <div class="component-group">
+        <h3 class="section-mini-title">Stats/Badge Component (4 Styles)</h3>
+        <div class="grid grid-4">
+          <article class="fx-card spotlight" style="--cat-rgb:244,114,182"><h3>Spotlight</h3><div class="stat-grid"><div><strong>98%</strong><span>Retention</span></div><div><strong>24ms</strong><span>Latency</span></div></div><div class="badge-row"><span class="demo-badge ok">Stable</span><span class="demo-badge beta">Beta</span><span class="demo-badge hot">Hot</span></div></article>
+          <article class="fx-card glass-panel"><h3>Glass</h3><div class="stat-grid"><div><strong>98%</strong><span>Retention</span></div><div><strong>24ms</strong><span>Latency</span></div></div><div class="badge-row"><span class="demo-badge ok">Stable</span><span class="demo-badge beta">Beta</span><span class="demo-badge hot">Hot</span></div></article>
+          <article class="fx-card animated-border" style="--cat-rgb:59,130,246"><h3>Border</h3><div class="stat-grid"><div><strong>98%</strong><span>Retention</span></div><div><strong>24ms</strong><span>Latency</span></div></div><div class="badge-row"><span class="demo-badge ok">Stable</span><span class="demo-badge beta">Beta</span><span class="demo-badge hot">Hot</span></div></article>
+          <article class="fx-card soft-shadow" style="--cat-rgb:251,146,60"><h3>Shadow</h3><div class="stat-grid"><div><strong>98%</strong><span>Retention</span></div><div><strong>24ms</strong><span>Latency</span></div></div><div class="badge-row"><span class="demo-badge ok">Stable</span><span class="demo-badge beta">Beta</span><span class="demo-badge hot">Hot</span></div></article>
+        </div>
       </div>
     </section>
   </main>

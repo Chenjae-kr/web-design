@@ -1,20 +1,27 @@
 <!doctype html>
-<html lang="ko">
+<html lang="ko" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Web Design Effects Lab</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/spotlight.css" />
+  <link rel="stylesheet" href="css/glass.css" />
+  <link rel="stylesheet" href="css/animated-border.css" />
+  <link rel="stylesheet" href="css/soft-shadow.css" />
 </head>
 <body>
-  <header class="topbar glass">
+  <header class="topbar">
     <div class="brand">✨ Web Design Effects Lab</div>
-    <nav>
-      <a href="#spotlight">Spotlight</a>
-      <a href="#glass">Glass</a>
-      <a href="#border">Border</a>
-      <a href="#shadow">Shadow</a>
-    </nav>
+    <div class="topbar-right">
+      <nav>
+        <a href="#spotlight">Spotlight</a>
+        <a href="#glass">Glass</a>
+        <a href="#border">Border</a>
+        <a href="#shadow">Shadow</a>
+      </nav>
+      <button class="theme-btn" id="themeToggle" type="button">☀️ Light</button>
+    </div>
   </header>
 
   <main class="container">
@@ -61,6 +68,10 @@
   </main>
 
   <footer class="footer">Built for GitHub Pages · Chenjae</footer>
-  <script src="script.js"></script>
+  <script src="js/theme-toggle.js"></script>
+  <script src="js/spotlight.js"></script>
+  <script src="js/glass.js"></script>
+  <script src="js/animated-border.js"></script>
+  <script src="js/soft-shadow.js"></script>
 </body>
 </html>

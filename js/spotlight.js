@@ -1,6 +1,5 @@
 (() => {
   const cards = document.querySelectorAll('.spotlight');
-
   cards.forEach(card => {
     card.addEventListener('mousemove', (e) => {
       const r = card.getBoundingClientRect();

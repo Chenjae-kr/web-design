@@ -1,0 +1,17 @@
+/* Claymorphism language */
+.style-clay{
+  background:color-mix(in srgb,var(--bg2) 96%, #f5f7ff 4%);
+  border-color:color-mix(in srgb,var(--line) 75%, transparent);
+  border-radius:20px;
+  box-shadow:
+    calc(var(--clay-depth) * .55) calc(var(--clay-depth) * .55) calc(var(--clay-depth) * 1.2) rgba(0,0,0,.16),
+    calc(var(--clay-depth) * -.45) calc(var(--clay-depth) * -.45) calc(var(--clay-depth) * 1.1) rgba(255,255,255,.22);
+}
+.style-clay .demo-btn,
+.style-clay .demo-input,
+.style-clay .demo-panel{
+  border-radius:14px;
+  box-shadow:
+    4px 4px 10px rgba(0,0,0,.12),
+    -3px -3px 8px rgba(255,255,255,.16);
+}

@@ -1,0 +1,22 @@
+/* Dark mode language */
+.style-dark{
+  filter:contrast(var(--dark-contrast));
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+  border:1px solid rgba(148,163,184,.26);
+  box-shadow:
+    0 2px 8px rgba(0,0,0,.2),
+    0 12px 30px rgba(0,0,0,.22);
+}
+.style-dark .demo-btn.primary{
+  background:linear-gradient(135deg, #2563eb, #0ea5e9);
+  border-color:rgba(125,211,252,.45);
+  color:#eef7ff;
+}
+.style-dark .demo-input{
+  background:#0f172a;
+  border-color:rgba(148,163,184,.35);
+}
+.style-dark .demo-table thead th{
+  background:rgba(15,23,42,.78);
+}

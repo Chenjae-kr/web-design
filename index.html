@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Web Design Effects Lab</title>
+  <title>Design Language Playground</title>
   <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/spotlight.css" />
   <link rel="stylesheet" href="css/glass.css" />
-  <link rel="stylesheet" href="css/animated-border.css" />
-  <link rel="stylesheet" href="css/soft-shadow.css" />
+  <link rel="stylesheet" href="css/clay.css" />
+  <link rel="stylesheet" href="css/dark-language.css" />
 </head>
 <body>
   <header class="topbar">
-    <div class="brand">✨ Web Design Effects Lab</div>
+    <div class="brand">🧪 Design Language Playground</div>
     <div class="topbar-right">
       <nav>
-        <a href="#spotlight">Spotlight</a>
         <a href="#glass">Glass</a>
-        <a href="#border">Border</a>
-        <a href="#shadow">Shadow</a>
+        <a href="#clay">Clay</a>
+        <a href="#dark">Dark</a>
+        <a href="#compare">Compare</a>
+        <a href="#glossary">Glossary</a>
       </nav>
       <button class="theme-btn" id="themeToggle" type="button">☀️ Light</button>
     </div>
@@ -26,128 +26,84 @@
 
   <main class="container">
     <section class="hero">
-      <h1>스타일별 컴포넌트 쇼케이스</h1>
-      <p>각 스타일 섹션 안에 표/버튼/배지/패널 컴포넌트를 배치했습니다.</p>
+      <h1>디자인 언어를 눈으로 이해하는 학습형 페이지</h1>
+      <p>글래스모피즘 · 클레이모피즘 · 다크모드를 같은 컴포넌트로 비교해보며, “무슨 느낌인지”를 빠르게 체감합니다.</p>
 
       <div class="control-panel">
-        <div class="control-row">
-          <span class="label">Color Preset</span>
-          <div class="chips" id="presetChips">
-            <button class="chip active" data-preset="mint">Mint</button>
-            <button class="chip" data-preset="violet">Violet</button>
-            <button class="chip" data-preset="cyber">Cyber</button>
-            <button class="chip" data-preset="warm">Warm</button>
-          </div>
-        </div>
         <div class="control-grid">
-          <label>Spotlight Radius <input id="spotRadius" type="range" min="120" max="360" value="220"></label>
-          <label>Spotlight Glow <input id="spotAlpha" type="range" min="10" max="50" value="28"></label>
-          <label>Glass Blur <input id="glassBlur" type="range" min="2" max="16" value="8"></label>
-          <label>Border Speed <input id="borderSpeed" type="range" min="8" max="30" value="18"></label>
-          <label>Shadow Depth <input id="shadowDepth" type="range" min="8" max="20" value="12"></label>
+          <label>Glass Blur <input id="glassBlur" type="range" min="4" max="20" value="10"></label>
+          <label>Clay Softness <input id="clayDepth" type="range" min="8" max="30" value="16"></label>
+          <label>Dark Contrast <input id="darkContrast" type="range" min="85" max="120" value="100"></label>
         </div>
-      </div>
-    </section>
-
-    <section id="spotlight" class="section">
-      <div class="section-head"><h2>1) 🖱️ Mouse Spotlight / Glow</h2><button class="copy-btn" data-copy="spotlight">코드 복사</button></div>
-      <div class="grid grid-4">
-        <article class="fx-card spotlight" style="--cat-rgb:79,255,176">
-          <h3>Table</h3>
-          <table class="demo-table"><thead><tr><th>Plan</th><th>Price</th><th>Users</th></tr></thead><tbody><tr><td>Starter</td><td>$9</td><td>3</td></tr><tr><td>Pro</td><td>$29</td><td>10</td></tr><tr><td>Team</td><td>$79</td><td>30</td></tr></tbody></table>
-        </article>
-        <article class="fx-card spotlight" style="--cat-rgb:167,139,250">
-          <h3>Buttons</h3>
-          <div class="demo-btn-row"><button class="demo-btn primary">Primary</button><button class="demo-btn ghost">Ghost</button><button class="demo-btn danger">Danger</button></div>
-        </article>
-        <article class="fx-card spotlight" style="--cat-rgb:251,191,36">
-          <h3>Badge + Stats</h3>
-          <div class="stat-grid"><div><strong>98%</strong><span>Retention</span></div><div><strong>24ms</strong><span>Latency</span></div></div>
-          <div class="badge-row"><span class="demo-badge ok">Stable</span><span class="demo-badge beta">Beta</span><span class="demo-badge hot">Hot</span></div>
-        </article>
-        <article class="fx-card spotlight" style="--cat-rgb:96,165,250">
-          <h3>Panel</h3>
-          <div class="demo-panel"><p>Mouse 위치를 따라 패널에 은은한 광원이 생깁니다.</p></div>
-        </article>
       </div>
     </section>
 
     <section id="glass" class="section">
-      <div class="section-head"><h2>2) 🪞 Glassmorphism + Inner Light</h2><button class="copy-btn" data-copy="glass">코드 복사</button></div>
-      <div class="grid grid-4">
-        <article class="fx-card glass-panel" style="--cat-rgb:79,255,176">
-          <h3>Table</h3>
-          <table class="demo-table"><thead><tr><th>Plan</th><th>Price</th><th>Users</th></tr></thead><tbody><tr><td>Starter</td><td>$9</td><td>3</td></tr><tr><td>Pro</td><td>$29</td><td>10</td></tr><tr><td>Team</td><td>$79</td><td>30</td></tr></tbody></table>
-        </article>
-        <article class="fx-card glass-panel" style="--cat-rgb:167,139,250">
-          <h3>Buttons</h3>
-          <div class="demo-btn-row"><button class="demo-btn primary">Primary</button><button class="demo-btn ghost">Ghost</button><button class="demo-btn danger">Danger</button></div>
-        </article>
-        <article class="fx-card glass-panel" style="--cat-rgb:251,191,36">
-          <h3>Badge + Stats</h3>
-          <div class="stat-grid"><div><strong>98%</strong><span>Retention</span></div><div><strong>24ms</strong><span>Latency</span></div></div>
-          <div class="badge-row"><span class="demo-badge ok">Stable</span><span class="demo-badge beta">Beta</span><span class="demo-badge hot">Hot</span></div>
-        </article>
-        <article class="fx-card glass-panel" style="--cat-rgb:96,165,250">
-          <h3>Panel</h3>
-          <div class="demo-panel"><p>블러 + 이너라이트로 고급스러운 정보 패널 느낌을 냅니다.</p></div>
-        </article>
+      <div class="section-head"><h2>1) 🪞 Glassmorphism</h2><button class="copy-btn" data-copy="glass">코드 복사</button></div>
+      <p class="section-desc"><strong>키워드:</strong> Frosted / Translucent / Inner Light · <strong>추천:</strong> 대시보드, 오버레이 패널 · <strong>주의:</strong> 텍스트 대비 부족 방지</p>
+      <div class="do-dont"><div><b>Do</b> 명확한 경계선 + 충분한 대비</div><div><b>Don't</b> 과도한 blur + 낮은 가독성</div></div>
+      <div class="grid grid-5">
+        <article class="fx-card style-glass"><h3>Button</h3><button class="demo-btn primary">Primary Action</button></article>
+        <article class="fx-card style-glass"><h3>Panel</h3><div class="demo-panel"><p>반투명 유리판 느낌 + 은은한 내부 광택</p></div></article>
+        <article class="fx-card style-glass"><h3>Badge</h3><div class="badge-row"><span class="demo-badge ok">Stable</span><span class="demo-badge beta">Beta</span></div></article>
+        <article class="fx-card style-glass"><h3>Table</h3><table class="demo-table"><thead><tr><th>Plan</th><th>Price</th></tr></thead><tbody><tr><td>Starter</td><td>$9</td></tr><tr><td>Pro</td><td>$29</td></tr></tbody></table></article>
+        <article class="fx-card style-glass"><h3>Input</h3><input class="demo-input" placeholder="Search dashboard…" /></article>
       </div>
     </section>
 
-    <section id="border" class="section">
-      <div class="section-head"><h2>3) 🎨 Animated Gradient Border</h2><button class="copy-btn" data-copy="border">코드 복사</button></div>
-      <div class="grid grid-4">
-        <article class="fx-card animated-border" style="--cat-rgb:79,255,176">
-          <h3>Table</h3>
-          <table class="demo-table"><thead><tr><th>Plan</th><th>Price</th><th>Users</th></tr></thead><tbody><tr><td>Starter</td><td>$9</td><td>3</td></tr><tr><td>Pro</td><td>$29</td><td>10</td></tr><tr><td>Team</td><td>$79</td><td>30</td></tr></tbody></table>
-        </article>
-        <article class="fx-card animated-border" style="--cat-rgb:167,139,250">
-          <h3>Buttons</h3>
-          <div class="demo-btn-row"><button class="demo-btn primary">Primary</button><button class="demo-btn ghost">Ghost</button><button class="demo-btn danger">Danger</button></div>
-        </article>
-        <article class="fx-card animated-border" style="--cat-rgb:251,191,36">
-          <h3>Badge + Stats</h3>
-          <div class="stat-grid"><div><strong>98%</strong><span>Retention</span></div><div><strong>24ms</strong><span>Latency</span></div></div>
-          <div class="badge-row"><span class="demo-badge ok">Stable</span><span class="demo-badge beta">Beta</span><span class="demo-badge hot">Hot</span></div>
-        </article>
-        <article class="fx-card animated-border" style="--cat-rgb:96,165,250">
-          <h3>Panel</h3>
-          <div class="demo-panel"><p>호버 시 움직이는 보더로 패널 경계가 생동감 있게 강조됩니다.</p></div>
-        </article>
+    <section id="clay" class="section">
+      <div class="section-head"><h2>2) 🍥 Claymorphism</h2><button class="copy-btn" data-copy="clay">코드 복사</button></div>
+      <p class="section-desc"><strong>키워드:</strong> Soft / Puffy / Tactile · <strong>추천:</strong> 온보딩, 감성 UI, 키즈/웰니스 앱 · <strong>주의:</strong> 과하면 장난감처럼 보임</p>
+      <div class="do-dont"><div><b>Do</b> 둥근 모서리 + 이중 그림자 밸런스</div><div><b>Don't</b> 모든 요소에 동일한 볼륨 남발</div></div>
+      <div class="grid grid-5">
+        <article class="fx-card style-clay"><h3>Button</h3><button class="demo-btn primary">Soft Action</button></article>
+        <article class="fx-card style-clay"><h3>Panel</h3><div class="demo-panel"><p>말랑하고 떠있는 볼륨감 중심</p></div></article>
+        <article class="fx-card style-clay"><h3>Badge</h3><div class="badge-row"><span class="demo-badge ok">Friendly</span><span class="demo-badge beta">Playful</span></div></article>
+        <article class="fx-card style-clay"><h3>Table</h3><table class="demo-table"><thead><tr><th>Step</th><th>Status</th></tr></thead><tbody><tr><td>Intro</td><td>Done</td></tr><tr><td>Profile</td><td>Pending</td></tr></tbody></table></article>
+        <article class="fx-card style-clay"><h3>Input</h3><input class="demo-input" placeholder="이름을 입력하세요" /></article>
       </div>
     </section>
 
-    <section id="shadow" class="section">
-      <div class="section-head"><h2>4) ☁️ Multi-layered Soft Shadow</h2><button class="copy-btn" data-copy="shadow">코드 복사</button></div>
-      <div class="grid grid-4">
-        <article class="fx-card soft-shadow" style="--cat-rgb:79,255,176">
-          <h3>Table</h3>
-          <table class="demo-table"><thead><tr><th>Plan</th><th>Price</th><th>Users</th></tr></thead><tbody><tr><td>Starter</td><td>$9</td><td>3</td></tr><tr><td>Pro</td><td>$29</td><td>10</td></tr><tr><td>Team</td><td>$79</td><td>30</td></tr></tbody></table>
-        </article>
-        <article class="fx-card soft-shadow" style="--cat-rgb:167,139,250">
-          <h3>Buttons</h3>
-          <div class="demo-btn-row"><button class="demo-btn primary">Primary</button><button class="demo-btn ghost">Ghost</button><button class="demo-btn danger">Danger</button></div>
-        </article>
-        <article class="fx-card soft-shadow" style="--cat-rgb:251,191,36">
-          <h3>Badge + Stats</h3>
-          <div class="stat-grid"><div><strong>98%</strong><span>Retention</span></div><div><strong>24ms</strong><span>Latency</span></div></div>
-          <div class="badge-row"><span class="demo-badge ok">Stable</span><span class="demo-badge beta">Beta</span><span class="demo-badge hot">Hot</span></div>
-        </article>
-        <article class="fx-card soft-shadow" style="--cat-rgb:96,165,250">
-          <h3>Panel</h3>
-          <div class="demo-panel"><p>다층 그림자로 패널이 배경 위에 부유하는 깊이감을 만듭니다.</p></div>
-        </article>
+    <section id="dark" class="section">
+      <div class="section-head"><h2>3) 🌙 Dark Mode Language</h2><button class="copy-btn" data-copy="dark">코드 복사</button></div>
+      <p class="section-desc"><strong>키워드:</strong> Contrast / Focus / Low-light · <strong>추천:</strong> 개발툴, 장시간 사용 앱 · <strong>주의:</strong> 순수 검정/순수 흰색 과용 금지</p>
+      <div class="do-dont"><div><b>Do</b> 계층별 표면 톤 + 포인트 컬러 제한</div><div><b>Don't</b> 회색톤 구분 없는 평면 구성</div></div>
+      <div class="grid grid-5">
+        <article class="fx-card style-dark"><h3>Button</h3><button class="demo-btn primary">Deploy</button></article>
+        <article class="fx-card style-dark"><h3>Panel</h3><div class="demo-panel"><p>시선 집중형 정보 패널</p></div></article>
+        <article class="fx-card style-dark"><h3>Badge</h3><div class="badge-row"><span class="demo-badge ok">Online</span><span class="demo-badge hot">Critical</span></div></article>
+        <article class="fx-card style-dark"><h3>Table</h3><table class="demo-table"><thead><tr><th>Service</th><th>Latency</th></tr></thead><tbody><tr><td>API</td><td>24ms</td></tr><tr><td>DB</td><td>33ms</td></tr></tbody></table></article>
+        <article class="fx-card style-dark"><h3>Input</h3><input class="demo-input" placeholder="Run command..." /></article>
+      </div>
+    </section>
+
+    <section id="compare" class="section">
+      <div class="section-head"><h2>4) 📊 빠른 비교표</h2></div>
+      <table class="compare-table">
+        <thead><tr><th>항목</th><th>Glassmorphism</th><th>Claymorphism</th><th>Dark Mode</th></tr></thead>
+        <tbody>
+          <tr><td>핵심 인상</td><td>투명/정교</td><td>부드러움/촉감</td><td>집중/차분</td></tr>
+          <tr><td>주요 수단</td><td>blur + inner light</td><td>round + dual shadow</td><td>contrast + surface tones</td></tr>
+          <tr><td>잘 맞는 제품</td><td>대시보드, 카드 UI</td><td>웰니스, 감성형 앱</td><td>툴링, 야간 사용 앱</td></tr>
+          <tr><td>리스크</td><td>가독성 저하</td><td>과장된 장난감 느낌</td><td>톤 분리 실패로 탁함</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="glossary" class="section">
+      <div class="section-head"><h2>5) 📚 미니 용어 사전</h2></div>
+      <div class="grid grid-5 glossary-grid">
+        <article class="term"><h3>Blur</h3><p>배경 정보를 흐리게 만들어 전경 요소를 강조.</p></article>
+        <article class="term"><h3>Elevation</h3><p>그림자/하이라이트로 레이어 높이감을 표현.</p></article>
+        <article class="term"><h3>Contrast</h3><p>텍스트/배경 명도 차이. 접근성의 핵심.</p></article>
+        <article class="term"><h3>Saturation</h3><p>색의 선명도. 과하면 피로감, 낮으면 밋밋함.</p></article>
+        <article class="term"><h3>Inner Light</h3><p>내부 경계의 미세 광택으로 재질감을 부여.</p></article>
       </div>
     </section>
   </main>
 
-  <footer class="footer">Built for GitHub Pages · Chenjae</footer>
+  <footer class="footer">Built for GitHub Pages · Design Language Learning</footer>
   <script src="js/theme-toggle.js"></script>
   <script src="js/controls.js"></script>
-  <script src="js/spotlight.js"></script>
-  <script src="js/glass.js"></script>
-  <script src="js/animated-border.js"></script>
-  <script src="js/soft-shadow.js"></script>
 </body>
 </html>
